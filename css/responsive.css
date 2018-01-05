@@ -1,0 +1,257 @@
+
+/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+.wrapper{
+	width:960px;
+	margin:0 auto;
+	display:block;
+
+}
+img{
+	width:100%;
+	height:auto;
+}
+.selectnav{
+	display:none;
+}
+#responsivemenu{
+	display:block;
+}
+
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+.wrapper{
+	width:98%;
+	border-left:none;
+	border-right:none;
+}
+#article{
+	width:100%;
+	
+}
+#sidebar{
+	width:100%;
+}
+#imgp_wrapper img {
+    width: 97%;
+    height: auto;
+}
+header #header {
+   
+    text-align: center;
+}
+header #header h1 {
+    padding: 10px 0 0 0px;
+}
+header #header p {
+    padding: 0 0 10px 0px;
+}
+
+#social_area li img {
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: 7px;
+}
+
+#social_area {
+
+    position:relative;
+    left:0;
+    top:0;
+
+
+}
+#social_area li {
+  
+    margin-left: 24%;
+}
+
+#social_area li img:hover{
+	width:18px;
+	height:18px;
+}
+
+.selectnav{
+	display:block;
+	height:3em;
+	width:100%;
+	z-index:999;
+	border:none;
+}
+#responsivemenu{
+	display:none;
+}
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.wrapper{
+	width:98%;
+	border-left:none;
+	border-right:none;
+}
+#article{
+	width:100%;
+	
+}
+#sidebar{
+	width:100%;
+}
+#imgp_wrapper img {
+    width: 75px;
+    height: 75px;
+
+}
+header #header {
+   
+    text-align: center;
+}
+header #header h1 {
+    padding: 10px 0 0 0px;
+}
+header #header p {
+    padding: 0 0 10px 0px;
+}
+#social_area li img {
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: 5px;
+}
+#social_area {
+
+    position:relative;
+    left:0;
+    top: 0;
+
+}
+#social_area li {
+  
+    margin-left: 36%;
+}
+#social_area li img:hover{
+	width:18px;
+	height:18px;
+}
+
+.selectnav{
+	display:block;
+	height:2em;
+	width:100%;
+	z-index:999;
+	border:none;
+}
+#responsivemenu{
+	display:none;
+}
+
+}
+
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+
+	
+.wrapper{
+	width:98%;
+	border-left:none;
+	border-right:none;
+}
+#article{
+	width:100%;
+	
+}
+#sidebar{
+	width:100%;
+}
+#imgp_wrapper img {
+    width: 75px;
+    height: 75px;
+
+}
+header #header {
+   
+    text-align: center;
+}
+header #header h1 {
+    padding: 10px 0 0 0px;
+}
+header #header p {
+    padding: 0 0 10px 0px;
+}
+#social_area li img {
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: 5px;
+}
+#social_area {
+
+    position:relative;
+    left:0;
+    top: 0;
+
+}
+#social_area li {
+  
+    margin-left: 36%;
+}
+#social_area li img:hover{
+	width:18px;
+	height:18px;
+}
+	
+	
+.selectnav{
+	display:block;
+	height:3em;
+	width:100%;
+	z-index:999;
+	border:none;
+}
+#responsivemenu{
+	display:none;
+}	
+	
+	
+	
+	
+}
